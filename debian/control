@@ -1,0 +1,28 @@
+Source: libtext-xslate-perl
+Section: perl
+Priority: optional
+Maintainer: Jani Hakala <jjhakala@gmail.com>
+Build-Depends: debhelper (>= 9), perl, libdata-messagepack-perl,
+ libtest-requires-perl, libmouse-perl, libfile-copy-recursive-perl
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Text-Xslate
+
+Package: libtext-xslate-perl
+Architecture: any
+Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends},
+ libdata-messagepack-perl, libmouse-perl
+Description: Scalable template engine for Perl5.
+ Xslate is a template engine, tuned for persistent applications, safe as 
+ an HTML generator, and with rich features.  
+ .
+ There are a lot of template engines in CPAN, for example Template-Toolkit, 
+ Text::MicroTemplate, HTML::Template, and so on, but all of them have some 
+ weak points: a full-featured template engine may be slow, while a fast 
+ template engine may be too simple to use. This is why Xslate is developed, 
+ which is the best template engine for web applications. 
+ .
+ The concept of Xslate is strongly influenced by Text::MicroTemplate and 
+ Template-Toolkit 2, but the central philosophy of Xslate is different from 
+ them. That is, the philosophy is sandboxing that the template logic should 
+ not have no access outside the template beyond your permission.

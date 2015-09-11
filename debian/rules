@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+override_dh_clean:
+	if [ -x t/900_bugs/issue79/cache ]; then \
+		rm -rf t/900_bugs/issue79/cache; \
+	fi
+	dh_clean
+
+%:
+	dh $@
