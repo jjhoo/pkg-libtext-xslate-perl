@@ -2,8 +2,12 @@ Source: libtext-xslate-perl
 Section: perl
 Priority: optional
 Maintainer: Jani Hakala <jjhakala@gmail.com>
-Build-Depends: debhelper (>= 9), perl, libdata-messagepack-perl,
- libtest-requires-perl, libmouse-perl, libfile-copy-recursive-perl
+Build-Depends: debhelper (>= 9.20120312~),
+ libdata-messagepack-perl (>= 0.38),
+ libfile-copy-recursive-perl,
+ libmouse-perl (>= 2.4.5),
+ libtest-requires-perl,
+ perl (>= 5.17.4)
 Build-Depends-Indep: perl
 Standards-Version: 3.9.6
 Homepage: https://metacpan.org/release/Text-Xslate
@@ -11,7 +15,8 @@ Homepage: https://metacpan.org/release/Text-Xslate
 Package: libtext-xslate-perl
 Architecture: any
 Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends},
- libdata-messagepack-perl, libmouse-perl
+ libdata-messagepack-perl (>= 0.38),
+ libmouse-perl (>= 2.4.5)
 Description: Scalable template engine for Perl5.
  Xslate is a template engine, tuned for persistent applications, safe as 
  an HTML generator, and with rich features.  
